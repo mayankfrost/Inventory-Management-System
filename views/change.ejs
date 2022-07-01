@@ -1,0 +1,44 @@
+<!--include header-->
+<%- include('include/_header')%>
+    <!--include header-->
+
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <div class="filter">
+                    <a href="/"><i class="fas fa-angle-double-left"></i> Home</a>
+                </div>
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">Change Amount</h2>
+                <span class="text-light">Use the below form to change an item's amount </span>
+            </div>
+
+            <!--update item form-->
+            <form id="change_item">
+                <div class="new_item">
+
+                    <div class="form-group">
+                        <label for="code">Unique Code</label>
+                        <input type="text" name="code" value="" placeholder="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="amount">Amount to be added(+)/subtracted(-)</label>
+                        <input type="number" name="amount" value="" placeholder="">
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark update">Change</button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </main>
+    <!-- </main> -->
+
+    <!--include header-->
+    <%- include('include/_footer')%>
+        <!--include header-->

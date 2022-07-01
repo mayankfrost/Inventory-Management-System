@@ -1,0 +1,24 @@
+<form action="/api/items" method="POST" id="add_item">
+    <div class="new_item">
+        <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Name">
+        </div>
+
+        <div class="form-group">
+            <label for="code" class="text-light">Unique Code</label>
+            <input type="text" name="code" value="" placeholder="X">
+        </div>
+
+        <div class="form-group">
+            <label for="Amount" class="text-light">Amount</label>
+            <input type="number" name="amount" value="" placeholder=0>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update"> Save</button>
+        </div>
+
+    </div>
+</form>

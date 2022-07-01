@@ -1,0 +1,53 @@
+<!--include header-->
+<%- include('include/_header')%>
+    <!--include header-->
+
+    <!--main site-->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <div class="filter">
+                    <a href="/"><i class="fas fa-angle-double-left"></i> HOME </a>
+                </div>
+            </div>
+            <!-- <div class="box-nav d-flex justify-between text-right"> -->
+            <div class="box-nav justify-between text-right">
+                <a href="/add-item" class="border-shadow">
+                    <span class="text-gradient">New Item <i class="fa-solid fa-item"></i></span>
+                </a>
+            </div>
+
+            <!--form handling-->
+            <form action="/index" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>
+                                Sl. No.
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Amount
+                            </th>
+                            <th>
+                                Unique Code
+                            </th>
+                            <th>
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_show')%>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+    <!--main site-->
+
+    <!--include footer-->
+    <%- include('include/_footer')%>
+        <!--include footer-->
